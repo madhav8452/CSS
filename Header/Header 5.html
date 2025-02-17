@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+
+    <link rel="icon" href="Favicon/5/android-chrome-512x512.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 80px;
+        }
+
+        .logo img {
+            /* border: 1px solid black; */
+            width: 15%;
+            height: 40px;
+            float: left;
+            margin-top: 20px;
+            margin-left: 2%;
+        }
+
+        header nav {
+            /* border: 1px solid black; */
+            width: 40%;
+            height: 60px;
+            float: left;
+            margin-left: 2%;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 60px;
+            margin-left: 30px;
+
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+            color: #5F6368;
+        }
+
+        .user img {
+            /* border: 1px solid black; */
+            width: 4%;
+            float: right;
+            margin-right: 5%;
+            margin-top: 12px;
+        }
+
+        .icon {
+            /* border: 1px solid black; */
+            float: right;
+            margin-top: 25px;
+            margin-right: 2%;
+        }
+
+        .icon .fa-question-circle {
+            font-size: 30px;
+        }
+
+        .search {
+            /* border: 1px solid black; */
+            float: right;
+            height: 40px;
+            margin-top: 20px;
+            margin-right: 2%;
+            width: 18%;
+            align-items: center;
+            padding-left: 20px;
+            border-radius: 20px;
+            background-color: chocolate;
+            box-shadow: 5px 5px 2px rgb(241, 188, 149);
+        }
+
+        .search input {
+            border: none;
+            outline: none;
+            background-color: chocolate;
+        }
+
+        ::placeholder {
+            color: rgb(241, 188, 149);
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .search .fa-magnifying-glass {
+            padding-left: 15px;
+            padding-top: 10px;
+            color: rgb(241, 188, 149);
+        }
+
+        hr {
+            background-color: #5F6368;
+            width: 95%;
+            margin-left: 2.5%;
+            height: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Image/Header5/Playlogo.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li>Games</li>
+                <li>Apps</li>
+                <li>Movies & TV</li>
+                <li>Books</li>
+                <li>Children</li>
+            </ul>
+        </nav>
+
+        <div class="user">
+            <img src="Image/Header5/user.gif" alt="">
+        </div>
+
+        <div class="icon">
+            <i class="fas fa-question-circle"></i>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+
+    <hr>
+</body>
+</html>

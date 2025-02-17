@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="icon" href="Favicon/2/android-chrome-512x512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: antiquewhite;
+        }
+        header {
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 100px;
+        }
+        header .logo img {
+            /* border: 1px solid black; */
+            float: left;
+            width: 20%;
+            margin-top: 21px;
+            margin-left: 5%;
+        }   
+        header nav {
+            /* border: 1px solid black; */
+            width: 40%;
+            height: 100px;
+            float: right;
+            margin-right: 5%;
+        }
+        header nav ul li {
+            display: inline-block;
+            line-height: 100px;
+            margin-left: 40px;
+            font-weight: bold;
+        }
+        header .Search {
+            border: 2px solid black;
+            width: 15%;
+            height: 40px;
+            float: right;
+            margin-right: 8%;
+            border-radius: 30px;
+            margin-top: 30px;
+        }
+        header .Search a {
+            margin-left: 20px;
+            text-decoration: none;
+            line-height: 35px;
+            font-weight: bold;
+            color: gray;
+        }
+        header .Search .fa-magnifying-glass {
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .content {
+            border: 1px solid black;
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(to right,black, rgb(33, 9, 121));
+        }
+        .content #Big {
+            color: antiquewhite;
+            font-size: 50px;
+            font-weight: bolder;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+        .content #Small {
+            color: antiquewhite;
+            font-size: 25px;
+            margin-top: 10px;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="ws-img-1" src="Image/Header2/WS-Logo-2023.webp">
+        </div>
+        <div class="Search">
+            <a href="">Search</a>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <nav>
+            <ul>
+                <li>Blog</li>
+                <li>Free Tools</li>
+                <li>Resourses</li>
+                <li>Solutions</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <p id="Big">WordStream makes<br>
+        Online marketing easy.</p>
+        <P id="Small">innovative tools and meaningful insights to<br>
+        help you learn, grow, and suceed.</p>
+    </div>
+</body>
+</html>

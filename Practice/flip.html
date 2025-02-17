@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .maincontainer {
+            border: 1px solid black;
+            position: relative;
+            width: 250px;
+            height: 320px;
+            background-color: green;
+        }
+
+        .thecard {
+            position: absolute;
+            border: 1px solid red;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: 0.5s ;
+            background-color: yellow;
+        }
+
+        .thecard:hover {
+            transform: rotatey(180deg);
+        }
+
+        .thefront {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid blueviolet;
+            background-color: yellow;
+            backface-visibility: hidden;
+            color: brown;
+        }
+
+        .theback {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid blueviolet;
+            background-color: blueviolet;
+            backface-visibility: hidden;
+            color: brown;
+            transform: rotatey(180deg);
+        } */
+
+        .main {
+            border: 1px solid black;
+            width: 50%;
+            height: 400px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 1s;
+        }
+
+        .main:hover {
+            transform: rotatey(180deg);
+        }
+
+        .front {
+            border: 1px solid black;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .front img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .back {
+            border: 1px solid black;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform: rotatey(180deg);
+            backface-visibility: hidden;
+        }
+
+        .back img {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="maincontainer">
+        <div class="thecard">
+            <div class="thefront">the front</div>
+            <div class="theback">the back</div>
+        </div>
+    </div> -->
+
+    <div class="main">
+    <div class="front">
+        <img src="2.png" alt="">
+    </div>
+    <div class="back">
+        <img src="3.jpg" alt="">
+    </div>
+    </div>
+</body>
+</html>

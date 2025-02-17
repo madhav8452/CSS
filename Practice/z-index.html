@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 1px solid black;
+            width: 400px;
+            height: 400px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent:hover .child1 {
+            transform: translatey(-70px);
+        }
+
+        .parent .child1 {
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-color: brown;
+            transition: 1s;
+            border-radius: 30px;
+        }
+
+        .parent .child1 h1 {
+            text-align: center;
+        }
+
+        .parent .child2 {
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-color: blueviolet;
+            border-radius: 30px;
+            transform: skew(20deg);
+            transition: 1s;
+        }
+
+        .parent .child2:hover {
+            transform: skew(0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">
+            <h1>Action</h1>
+        </div>
+        <div class="child2"></div>
+    </div>
+</body>
+</html>
