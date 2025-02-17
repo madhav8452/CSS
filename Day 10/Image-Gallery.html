@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(2, 2, 2);
+        }
+        h1 {
+            margin-top: 50px;
+            text-align: center;
+            /* margin-left: 25%; */
+            color: antiquewhite;
+        }
+
+        .div {
+            /* border: 1px solid rgb(255, 254, 254); */
+            margin-left: 20%;
+            margin-top: 50px;
+            width: 100%;
+        }
+        .div img {
+            align-content: center;
+            filter: saturate(0%);
+            width: 20%;
+            height: 10%;
+            border: 2px solid whitesmoke;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: all ease 1s;
+            cursor: pointer;
+        }
+
+        .div img:hover {
+            filter: saturate(100%);
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image - Gallery</h1>
+    <div class="div">
+        <!-- <img src="Image/1.jpg" alt=""> -->
+        <img src="Image/2.png" alt="">
+        <img src="Image/3.png" alt="">
+        <img src="Image/4.jpg" alt=""><br>
+        <img src="Image/5.png" alt="">
+        <img src="Image/6.jpg" alt="">
+        <img src="Image/7.jpg" alt=""><br>
+        <img src="Image/8.jpg" alt="">
+        <img src="Image/9.jpg" alt="">
+        <img src="Image/10.png" alt="">
+    </div>
+</body>
+</html>

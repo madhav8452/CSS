@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        header {
+            border: 5px solid black;
+            width: 60%;
+            height: 100px;
+            margin-left: 20%;
+            margin-top: 30px;
+        }
+
+        header ul li {
+            float: left;
+            margin-left: 80px;
+            list-style: none;
+            line-height: 100px;
+            position: relative;
+        }
+
+        header ul li::before {
+            content: "";
+            background-color: indigo;
+            width: 0%;
+            height: 5px;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            transition: 1s;
+        }
+
+        ul li:hover::before {
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Ul Before Effect</h1>
+
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Product</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+</body>
+</html>

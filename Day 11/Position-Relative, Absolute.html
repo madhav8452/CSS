@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .a {
+            border: 1px solid black;
+            width: 400px;
+            height: 400px;
+            background-color: brown;
+            position: relative;
+        }
+
+        .b {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        }
+
+        .content {
+            /* border: 1px solid black; */
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            position: absolute;
+            right: 500px;
+            top: 50px;
+        }
+
+        .content h1 {
+            margin-top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b"></div>
+    </div>
+
+    <div class="content">
+        <h1>Position</h1>
+        <h3>Relative & Absolute</h3>
+    </div>
+</body>
+</html>

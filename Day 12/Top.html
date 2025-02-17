@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            width: 10%;
+            height: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        button::after {
+            content: "";
+            background-color: blueviolet;
+            width: 100%;
+            height: 0%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: 1s;
+            z-index: -1;
+        }
+
+        button:hover::after {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Button - Top Effect</h1>
+
+    <center>
+    <button>Click Here</button>
+    </center>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .main {
+            border: 1px solid black;
+            width: 100%;
+            height: 400px;
+        }
+
+        .a, .b, .c, .d, .e {
+            border: 1px solid black;
+            width: 10%;
+            height: 200px;
+            float: left;
+            margin-top: 100px;
+            margin-left: 9%;
+        }
+
+        .main div:first-child {
+            background-color: brown;
+        }
+
+        .main div:last-child{
+            background-color: blueviolet;
+        }   
+
+        .main div:nth-child(2){
+            background-color: cadetblue;
+        }   
+
+        .main div:nth-child(3){
+            background-color: chocolate;
+        }   
+
+        .main div:nth-child(4){
+            background-color: chartreuse;
+        }   
+
+    </style>
+</head>
+<body>
+    <h1>Child Selector</h1>
+    <div class="main">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+    </div>
+</body>
+</html>
